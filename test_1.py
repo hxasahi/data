@@ -1,14 +1,19 @@
-# -*- coding: utf-8 -*-
-import pymysql
 
+import pymysql
+import pandas 
 conn = pymysql.connect(
     host="localhost",
     user="root",password="2020hx",
-    database="ceshi",)
+    database="ceshi",
+    use_unicode=True, charset="utf8")
+
+show_sql = 'SELECT * FROM ceshi_2 '
 
 cursor = conn.cursor()
+cursor.execute(show_sql)
+show=cursor.fetchall()
 
-cursor.execute("""INSERT INTO ceshi_3 VALUES(3,'我',17);""")
-conn.commit()
+print(show)
 cursor.close()
 conn.close()
+i = input()
