@@ -1,4 +1,4 @@
-ï»¿# -*- coding: utf-8 -*-
+# -*- coding: cp936 -*-
 import pymysql
 connect = pymysql.connect(
     host="localhost",
@@ -56,16 +56,16 @@ def delete():
 
 print('')
 print('')
-print('                          æ¬¢è¿ä½¿ç”¨ä»“åº“ç®¡ç†ç³»ç»Ÿ')
+print('                          »¶Ó­Ê¹ÓÃ²Ö¿â¹ÜÀíÏµÍ³')
 print('')
-print('1 å¢æ·»        '),
-print('2 åˆ é™¤      '),
-print('3 ä¿®æ”¹   '),
-print('4 æŸ¥è¯¢     ')
+print('1 ÔöÌí        '),
+print('2 É¾³ı      '),
+print('3 ĞŞ¸Ä   '),
+print('4 ²éÑ¯     ')
 print('')
-print('99 é€€å‡º    ')
+print('99 ÍË³ö    ')
 print('')
-i = input('               è¯·æŒ‰ä¸‹å¯¹åº”æ•°å­—é€‰æ‹©ï¼š')
+i = input('               Çë°´ÏÂ¶ÔÓ¦Êı×ÖÑ¡Ôñ£º')
 while 1 :
     if i == 1 :
         pass
@@ -79,4 +79,4 @@ while 1 :
         break
     else :
         pass
-    i = input('               è¯·æŒ‰ä¸‹å¯¹åº”æ•°å­—é€‰æ‹©ï¼š')
+    i = input('               Çë°´ÏÂ¶ÔÓ¦Êı×ÖÑ¡Ôñ£º')
